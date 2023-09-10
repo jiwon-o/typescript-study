@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // JS 버전 설정(ESNext는 JS의 최신버전)
+    "module": "ESNext", // 모듈 설정(CommonJS, ES)
+    "outDir": "section1/dist", // js 파일 생성 폴더 설정
+    "strict": false, // 엄격한 타입 오류 검사
+    "moduleDetection": "force"
+  },
+  "ts-node": {
+    "esm": true // ts-node로 실행할 때 필요
+  },
+  "include": ["section1/src"] // 경로에 있는 모든 ts파일 실행 (tsc로 실행)
+}
