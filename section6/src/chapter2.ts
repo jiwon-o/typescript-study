@@ -47,18 +47,14 @@ class ExecutiveOfficer extends Employee {
   }
 }
 
-// 생성자에 접근 제어자를 붙이면 필드를 자동으로 생성한다.
+// 생성자에 접근 제어자를 붙이면 필드와 this.~를 자동으로 생성한다.
 class EmployeeB {
   // 생성자
   constructor(
     private name: string,
     protected age: number,
     public position: string
-  ) {
-    this.name = name;
-    this.age = age;
-    this.position = position;
-  }
+  ) {}
 
   // 메서드
   work() {
